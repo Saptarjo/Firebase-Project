@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:elevation="1dp"
+                android:background="#B281F4"></ImageView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="178dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="116dp"
+                android:src="@drawable/image"
+                app:civ_border_color="#FF000000"
+                android:elevation="10dp"
+                app:civ_border_width="2dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/card1"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/profile_image"
+                    >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="80dp"
+                        android:gravity="center"
+                        android:text="Matt Donevon"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/name"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+
+                        android:src="@drawable/img2"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="75dp"
+                        android:layout_height="69dp"
+                        android:layout_below="@id/img1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="-8dp"
+
+                        android:src="@drawable/img1"></ImageView>
+
+                    <TextView
+                        android:id="@+id/membership"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img2"
+                        android:gravity="center"
+                        android:text="Finakya Premium Member"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/membership1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/membership"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="12 Month Membership"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/membership1"
+                        android:text="Valid upto 31st Dec, 2020"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:id="@+id/yoyo"></TextView>
+
+                    <ProgressBar
+                        android:id="@+id/simpleProgressBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yoyo"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:max="100"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="80"/><!--// 50 default progress value-->
+
+                    <Button
+                        android:id="@+id/renew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/simpleProgressBar"
+                        android:layout_marginTop="10dp"
+                        android:text="RENEW NOW"
+                        android:background="#B281F4"
+                        android:gravity="center"
+
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card1"
+                android:id="@+id/card2"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="43dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="30dp"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/password" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img3"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="If you have a membership extension code please enter"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#F1E3E3"
+                        android:gravity="center"
+                        android:text="Enter Code"
+                        android:textColor="#BDA4A4" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card2"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Refer Friends"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:id="@+id/ref"
+                        ></TextView>
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="328dp"
+                        android:layout_height="157dp"
+                        android:layout_below="@id/ref"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/referfriend" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Refer Now"
+                        android:layout_below="@id/img4"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:background="#B281F4"
+
+
+                        android:textColor="#FFFFFF"></Button>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+                
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

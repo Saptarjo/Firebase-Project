@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Renew now from Below Plans"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:id="@+id/lay1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/txt1"
+            android:id="@+id/card3"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_height="24dp"
+
+                    android:layout_weight="1"
+                    android:src="@drawable/img2"
+                    android:layout_width="5dp"></ImageView>
+
+                <LinearLayout
+
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:layout_width="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 month"
+                        android:textStyle="bold"
+                        android:layout_height="5dp"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_height="5dp"
+                        android:text="Finakya Premium Membership"
+                        android:textStyle="bold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/price1"
+                        android:text=" ₹ 100"
+                        android:textStyle="bold"
+                        android:textColor="#737CAC"></TextView>
+
+
+                </LinearLayout>
+
+                <Button
+
+                    android:layout_height="match_parent"
+                    android:layout_width="10dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="RENEW NOW"
+                    android:background="#B281F4"
+
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    ></Button>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay1"
+        android:id="@+id/lay2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/txt1"
+            android:id="@+id/card5"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+
+                    android:layout_weight="1"
+                    android:src="@drawable/img1"></ImageView>
+
+                <LinearLayout
+
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="5dp"
+
+                        android:text="6 month"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Finakya Premium Membership"
+                        android:layout_height="5dp"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/price2"
+                        android:layout_height="5dp"
+                        android:text=" ₹ 1000"
+                        android:textStyle="bold"
+                        android:textColor="#737CAC"
+                        ></TextView>
+
+
+                </LinearLayout>
+
+                <Button
+
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="RENEW NOW"
+                    android:background="#B281F4"
+
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    ></Button>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/txt1"
+            android:id="@+id/card4"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_height="18dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="20dp"
+
+                        android:src="@drawable/img2"
+                        android:layout_width="5dp"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_height="69dp"
+                        android:layout_below="@id/img5"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="-8dp"
+                        android:layout_width="5dp"
+
+                        android:src="@drawable/img1"></ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="5dp"
+                        android:text="12 month"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Finakya Premium Membership"
+                        android:layout_height="5dp"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/price3"
+                        android:layout_height="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#737CAC"
+                        android:text=" ₹ 1500"></TextView>
+
+
+                </LinearLayout>
+
+                <Button
+
+                    android:layout_height="match_parent"
+                    android:layout_width="10dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="RENEW NOW"
+                    android:background="#B281F4"
+
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    ></Button>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
